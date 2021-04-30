@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+### Changed
+* Added open VSX registry publishing
+
 ## [0.0.11] - 2021-04-26
 
 ### Changed

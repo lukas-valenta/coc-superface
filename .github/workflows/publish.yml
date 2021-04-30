@@ -38,6 +38,12 @@ jobs:
 
       # Deploy to microsoft store
       - name: Publish to Microsoft Extension Marketplace
-        run: yarn deploy --packagePath ./superface-language-client-vscode.vsix
+        run: yarn deploy:vsce --packagePath ./superface-language-client-vscode.vsix
         env:
           VSCE_PAT: ${{ secrets.VSCODE_MARKETPLACE_PAT }}
+      
+      # Deploy to open-vsx store
+      - name: Publish to Open VSX Registry
+        run: yarn deploy:ovsx ./superface-language-client-vscode.vsix
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_MARKETPLACE_PAT }}
