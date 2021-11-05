@@ -1,4 +1,4 @@
-# Superface Language client for VSCode
+# Superface Language client for Visual Studio Code
 
 Extension that provides a client for the Superface Language server and syntax highlighting definitions.
 
@@ -13,6 +13,12 @@ Extension that provides a client for the Superface Language server and syntax hi
 
 ## Install
 
+### Marketplace
+
+The extension is released to both the [Microsoft marketplace](https://marketplace.visualstudio.com/items?itemName=superfaceai.superface-language-client-vscode) and the [OpenVSX registry](https://open-vsx.org/extension/superfaceai/superface-language-client-vscode).
+
+### Manual
+
 Download the `.vsix` file from one of the Github [releases](https://github.com/superfaceai/language-client-vscode/releases).
 
 Install the extension using
@@ -23,7 +29,16 @@ code --install-extension <path-to-vsix>
 
 ## Usage
 
-The extension automatically starts a bundled language server and provides syntax highlighting grammar definitions for vscode.
+The extension provides following features:
+* Syntax highlighting for Comlink maps and profiles
+* Code snippets for Comlink maps and profiles
+* JSON schemas for Comlink ASTs and super.json (wip)
+* Bundled [language server](https://github.com/superfaceai/language-server)
+	- Syntax checking
+	- Semantic linting
+	- Workspace symbol search (requires VSCode to be open in workspace mode)
+
+![preview](docs/preview.gif)
 
 ## Development
 
