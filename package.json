@@ -4,6 +4,7 @@
   "description": "Superface Language Client for coc.nvim",
   "version": "0.0.12",
   "repository": "https://github.com/lukas-valenta/coc-superface",
+  "icon": "docs/LogoGreen.png",
   "author": "Superface Team",
   "publisher": "superfaceai",
   "license": "MIT",
@@ -26,7 +27,7 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
-    "@superfaceai/language-server": "0.0.12"
+    "@superfaceai/language-server": "^1.0.0"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -43,8 +44,8 @@
     "coc": "^0.0.80"
   },
   "activationEvents": [
-    "onLanguage:slang-map",
-    "onLanguage:slang-profile"
+    "onLanguage:comlink-map",
+    "onLanguage:comlink-profile"
   ],
   "main": "dist/extension.js",
   "contributes": {
@@ -73,8 +74,9 @@
     },
     "languages": [
       {
-        "id": "slang-map",
+        "id": "comlink-map",
         "aliases": [
+          "Comlink Map",
           "Superface Map"
         ],
         "extensions": [
@@ -83,8 +85,9 @@
         "configuration": "syntaxes/language-configuration.json"
       },
       {
-        "id": "slang-profile",
+        "id": "comlink-profile",
         "aliases": [
+          "Comlink Profile",
           "Superface Profile"
         ],
         "extensions": [
@@ -95,17 +98,41 @@
     ],
     "grammars": [
       {
-        "language": "slang-map",
-        "scopeName": "source.slang.map",
-        "path": "syntaxes/slang-map.tmLanguage.json",
+        "language": "comlink-map",
+        "scopeName": "source.comlink.map",
+        "path": "syntaxes/comlink-map.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.expression.jessie.slang.map": "javascript"
+          "meta.expression.jessie.comlink.map": "javascript"
         }
       },
       {
-        "language": "slang-profile",
-        "scopeName": "source.slang.profile",
-        "path": "syntaxes/slang-profile.tmLanguage.json"
+        "language": "comlink-profile",
+        "scopeName": "source.comlink.profile",
+        "path": "syntaxes/comlink-profile.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "comlink-map",
+        "path": "snippets/comlink-map.snippets.json"
+      },
+      {
+        "language": "comlink-profile",
+        "path": "snippets/comlink-profile.snippets.json"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": "*.suma.ast.json",
+        "url": "https://raw.githubusercontent.com/superfaceai/ast-js/main/src/interfaces/ast/map-ast.schema.json"
+      },
+      {
+        "fileMatch": "*.supr.ast.json",
+        "url": "https://raw.githubusercontent.com/superfaceai/ast-js/main/src/interfaces/ast/profile-ast.schema.json"
+      },
+      {
+        "fileMatch": "super.json",
+        "url": "https://superface.ai/docs/comlink/super.json"
       }
     ]
   }

@@ -6,10 +6,41 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Updated language-server to v1.0.0
+
+## [0.1.6] - 2021-10-18
+### Changed
+- Updated language-server to v0.0.17
+
+## [0.1.5] - 2021-09-27
+### Changed
+- Updated language-server to v0.0.16
+
+## [0.1.4] - 2021-08-10
+
+## [0.1.3] - 2021-08-06
+
+## [0.1.2] - 2021-08-06
+### Added
+- JSON schemas for maps, profiles and super.json (wip)
+
+## [0.1.1] - 2021-07-28
+
+## [0.1.0] - 2021-07-28
+### Added
+- Added profile and map snippets
+
+### Changed
+- Updated language-server to v0.0.13
+- Renamed `slang` to `comlink`
+- Added open VSX registry publishing
 
 ## [0.0.12] - 2021-06-08
 ### Changed
 - Updated language-server to v0.0.12
+
+## [0.0.11] - 2021-04-26
 
 ## [0.0.11] - 2021-04-26
 ### Changed
@@ -58,8 +89,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - `vsix` file release in github flow
 
-[Unreleased]: https://github.com/superfaceai/language-client-vscode/compare/v0.0.12...HEAD
+[Unreleased]: https://github.com/superfaceai/language-client-vscode/compare/v0.1.6...HEAD
+[0.1.6]: https://github.com/superfaceai/language-client-vscode/compare/v0.1.5...v0.1.6
+[0.1.5]: https://github.com/superfaceai/language-client-vscode/compare/v0.1.4...v0.1.5
+[0.1.4]: https://github.com/superfaceai/language-client-vscode/compare/v0.1.3...v0.1.4
+[0.1.3]: https://github.com/superfaceai/language-client-vscode/compare/v0.1.2...v0.1.3
+[0.1.2]: https://github.com/superfaceai/language-client-vscode/compare/v0.1.1...v0.1.2
+[0.1.1]: https://github.com/superfaceai/language-client-vscode/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/superfaceai/language-client-vscode/compare/v0.0.12...v0.1.0
 [0.0.12]: https://github.com/superfaceai/language-client-vscode/compare/v0.0.11...v0.0.12
+[0.0.11]: https://github.com/superfaceai/language-client-vscode/compare/v0.0.11...v0.0.11
 [0.0.11]: https://github.com/superfaceai/language-client-vscode/compare/v0.0.8...v0.0.11
 [0.0.8]: https://github.com/superfaceai/language-client-vscode/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/superfaceai/language-client-vscode/compare/v0.0.6...v0.0.7

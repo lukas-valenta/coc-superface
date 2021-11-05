@@ -1,0 +1,12 @@
+**/*
+
+!README.md
+!LICENSE.md
+
+!node_modules/
+!dist/
+
+!package.json
+!syntaxes/*.json
+!snippets/*.json
+!docs/*
